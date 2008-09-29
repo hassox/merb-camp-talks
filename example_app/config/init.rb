@@ -151,7 +151,7 @@ Merb::Config.use do |c|
   c[:session_store] = 'cookie'
 end
 
-Merb::Plugins.config[:merb_slices] = { :queue => ["MerbAuth""BlogSlice", ...] }
+Merb::Plugins.config[:merb_slices] = { :queue => ["MerbAuthPasswordSlice""BlogSlice"] }
 
 
 Merb::BootLoader.after_app_loads do
