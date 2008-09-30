@@ -5,7 +5,9 @@ describe "BlogSlice::Main (controller)" do
   # Feel free to remove the specs below
   
   before :all do
-    Merb::Router.prepare { add_slice(:BlogSlice) } if standalone?
+    Merb::Router.prepare do 
+      add_slice(:BlogSlice)
+    end if standalone?
   end
   
   after :all do
