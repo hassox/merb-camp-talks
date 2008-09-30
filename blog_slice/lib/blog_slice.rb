@@ -56,9 +56,9 @@ if defined?(Merb::Plugins)
     # @note prefix your named routes with :blog_slice_
     #   to avoid potential conflicts with global named routes.
     def self.setup_router(scope)
-      identify Post => :permalink do
-        resource :posts
-      end
+      # identify Post => :permalink do
+        scope.resource :posts
+      # end
     end
     
   end
