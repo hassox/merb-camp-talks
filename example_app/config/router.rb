@@ -28,12 +28,12 @@
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do
   
-  add_slice(:BlogSlice, :path_prefix => "blog", :default_routes => nil) do 
-    identify BlogSlice::Post => :permalink do 
-      match("/posts/:permalink/publish").
-        to(:controller => "posts", :action => "publish").
-        name(:publish)
-    end
-  end
-  
+  # add_slice(:BlogSlice, :path_prefix => "blog", :default_routes => nil) # do 
+   #    identify BlogSlice::Post => :permalink do 
+   #      match("/posts/:permalink/publish").
+   #        to(:controller => "posts", :action => "publish").
+   #        name(:publish)
+   #    end
+   #  end
+   #  
 end
